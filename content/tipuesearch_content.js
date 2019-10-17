@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': '\n 40823128 \n', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': 'About', 'text': '\n 40823128 \n gist: https://gist.github.com/40823128/9a5ea423dc53cbeed53766a50b2cc350 \n https://mde.tw/dartpad?id=9a5ea423dc53cbeed53766a50b2cc350 \n void main(){\n  for (int i =0;i < 5;i++) {\n    print("hello ${i + 1}");\n  }\n } \n \n \n', 'tags': '', 'url': 'About.html'}]};
