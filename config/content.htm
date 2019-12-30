@@ -55,7 +55,9 @@ document.getElementById("iframe").height = 600 ;
 <p><button onclick="largest()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">放大</span></span></button> <button onclick="original()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823128&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
 <h1>JS程式</h1>
+<h2>ROC_flag</h2>
+<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="roc">Draw ROC</button><button id="usa">Draw USA</button></p>
+<script src="/downloads/dart_ex/roc_flag/roc_flag.js"></script>
+<h2>temperature</h2>
 <p>請輸入所要轉換的溫度<br/>以數字加上 C 或 F:<br/><br/><input id="temp" max="30" min="1" type="text" value="20F"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
 <script src="/downloads/temperature.js"></script>
-<div id="wrapper"><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="roc">Draw ROC</button></div>
-<script src="/downloads/dart_ex/roc_flag.js"></script>
