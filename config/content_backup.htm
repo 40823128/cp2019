@@ -62,5 +62,38 @@ document.getElementById("iframe").height = 600 ;
 <p>請輸入所要轉換的溫度<br/>以數字加上 C 或 F:<br/><br/><input id="temp" max="30" min="1" type="text" value="20F"/> <br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
 <script src="/downloads/temperature.js"></script>
 <h1>W17</h1>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823128&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823128&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823128&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('weight')">重量轉換</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight1')">重量轉換</button><button onclick="getHtmlDart('flag')">各國國旗</button></p>
+<p><button onclick="largest()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">放大</span></span></button> <button onclick="original()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823128&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
 <p><canvas height="200" id="canvas" width="380"></canvas> <button id="jp">Draw JP</button> <button id="ru">Draw RU</button> <button id="roc">Draw ROC</button> <button id="fr">Draw FR</button> <button id="button">Clear Canvas</button></p>
-<script src="/downloads/dart.js"></script>
+<script src="/downloads/flag.js"></script>
